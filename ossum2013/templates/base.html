@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Open Source Community Summit marks the start of outreach efforts to more fully understand the needs of open source communities." />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>{% block title %}{% page_attribute "page_title" %} | {% endblock %}Open Source Community Summit</title>
+    <link rel="shortcut icon" href="img/favicon32.png" />
+    <link type="text/css" rel="stylesheet" href="css/oscs.css">
+    <!--[if IE]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+  <header>
+    <div id="mast">
+      <a href="http://www.opensource.org" id="osi-logo" class="spr">open source initiative</a>
+      <h1 title="Open Source Community Summit"><a href="/"><img src="img/masthead.png" alt="Open Source Community Summit" /></a></h1>
+    </div>
+    {% block header %}{% endblock %}
+  </header>
+
+  <div id="main">
+    {% block main %}{% placeholder content %}{% endblock %}
+  </div><!-- end of #main -->
+
+  <footer>
+    <a href="http://www.theopenbastion.com" id="ob-logo" class="spr"></a>
+    <p>
+      Copyright &copy; 2013, Open Source Community Summit &bull; All Rights Reserved<br />
+      Web Design and Development by <a href="http://www.imagescape.com">Imaginary Landscape, LLC</a>
+    </p>
+  </footer>
+  </body>
+</html>

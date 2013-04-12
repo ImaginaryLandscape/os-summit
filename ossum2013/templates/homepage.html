@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block header %}
+  {% placeholder homepage_header %}
+{% endblock %}
+
+{% block main %}
+  <div id="col1">
+    <section id="details">
+    {% placeholder homepage_section1 %}
+    </section>
+
+    <section id="background">
+    {% placeholder homepage_section2 %}
+    </section>
+  </div><!-- end of #col1 -->
+
+  <div id="col2">
+    <section id="format">
+    {% placeholder homepage_section3 %}
+    </section>
+
+    <section id="schedule">
+    {% placeholder homepage_section4 %}
+    </section>
+    {% placeholder homepage_col2_footer %}
+  </div><!-- end of #col2 -->
+{% endblock %}
