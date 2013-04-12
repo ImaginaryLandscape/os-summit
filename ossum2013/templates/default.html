@@ -1,1 +1,9 @@
 {% extends "base.html" %}
+
+{% load cms_tags %}
+
+{% block main %}
+  <div id="interior">
+  {% placeholder content %}
+  </div>
+{% endblock %}

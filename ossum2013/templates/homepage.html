@@ -1,7 +1,11 @@
 {% extends "base.html" %}
 
+{% load cms_tags %}
+
 {% block header %}
+  <div id="info">
   {% placeholder homepage_header %}
+  </div>
 {% endblock %}
 
 {% block main %}

@@ -18,7 +18,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgressql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'ossum2013_django',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'ossum2013',
@@ -117,6 +117,11 @@ ROOT_URLCONF = 'ossum2013.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'ossum2013.wsgi.application'
+
+AUTHENTICATION_BACKENDS = (
+    'iscapeauth.iscape.backends.IscapeBackend',
+    'django.contrib.auth.backends.ModelBackend',
+)
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".

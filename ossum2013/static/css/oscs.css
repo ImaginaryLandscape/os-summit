@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'UndercoverRegular';
+    src: url('UNDERCOV-webfont.eot');
+    src: url('UNDERCOV-webfont.eot?#iefix') format('embedded-opentype'),
+         url('UNDERCOV-webfont.woff') format('woff'),
+         url('UNDERCOV-webfont.ttf') format('truetype'),
+         url('UNDERCOV-webfont.svg#UndercoverRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: #9d966c;
+}
+body {
+  background: #fff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: #343434;
+  font-family: arial, helvetica, verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.3em;
+  margin: 40px auto;
+  min-height: 300px;
+  width: 84%;
+}
+h1, h2, h3 {
+  color: #796A3F;
+}
+p {
+  margin-bottom: .8em;
+}
+table {
+  border: none;
+}
+table td {
+  border-bottom: 1px solid #ccc;
+  padding: 0 8px 4px;
+  vertical-align: top;
+}
+table td:first-child {
+  text-align: right;
+  width: 25%;
+}
+a {
+  color: inherit;
+}
+ul {
+  padding-left: 16px;
+}
+li {
+  margin-bottom: .4em;
+}
+#main a {
+  color: #CC0033;
+}
+#main a:hover,
+#main a:focus {
+  opacity: .75;
+}
+.spr {
+  background-image: url('../img/sprites.png');
+  overflow: hidden;
+  text-indent: -9999px;
+}
+
+#mast {
+  font-size: 0;
+  padding: 8px;
+  max-width: 750px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+#osi-logo {
+  background-position: 0 0;
+  float: left;
+  height: 146px;
+  margin: 0 24px;
+  width: 124px;
+}
+header #info {
+  background: #f0eee8;
+  overflow: hidden;
+  padding: 8px;
+}
+header h1 {
+  float: left;
+  margin-top: 16px;
+  max-width: 570px;
+  width: 570px;
+}
+header h1 a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+header ul {
+  color: #336600;
+  font-size: 1.1em;
+  padding: 24px 40px;
+}
+header li {
+  margin-bottom: .8em;
+}
+header h2 {
+  clear: both;
+  font-size: 1.15em;
+  text-align: center;
+}
+#register-button {
+  background-position: 0 -148px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 3px #454545;
+  display: block;
+  float: right;
+  height: 225px;
+  margin: 0 12px 24px 24px;
+  outline: none;
+  width: 255px;
+}
+#register-button:hover,
+#register-button:focus {
+  background-position: -258px -148px;
+}
+
+#main {
+  background: #e3e1d8;
+  float: left;
+  padding: 20px 0;
+  position: relative;
+}
+#main.interior {
+  padding: 20px 40px;
+}
+#interior {
+  padding: 0 40px;
+}
+#col1 {
+  float: left;
+  width: 40%;
+}
+#col2 {
+  float: right;
+  width: 60%;
+}
+
+#main section {
+  padding: 0 24px 32px;
+}
+#col1 section {
+  border-right: 1px solid #a2976d;
+}
+#main h1, #main h2 {
+  margin: .8em 0 .6em;
+}
+#main h1 {
+  color: #565656;
+}
+#main h2 {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: .2em;
+}
+#main h3 {
+  font-family: 'UndercoverRegular', arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+  letter-spacing: -.5px;
+  margin-bottom: 20px;
+  text-align: center;
+  word-wrap: break-word;
+}
+#main h4 {
+  color: #365656;
+  margin: 1em 0 .4em;
+}
+#schedule table {
+  margin-bottom: 120px;
+}
+#sponsor-link {
+  color: #796A3F!important;
+  font-size: 1.1em;
+  text-decoration: none;
+  position: absolute;
+  right: 16px;
+  bottom: 10px;
+}
+footer {
+  overflow: hidden;
+  padding: 8px 16px 8px 5%;
+}
+footer p {
+  color: #796A3F;
+  font-size: .9em;
+  padding-top: 60px;
+  text-align: right;
+}
+#ob-logo {
+  background-position: -166px -8px;
+  display: block;
+  float: left;
+  height: 100px;
+  width: 94px;
+}
+
+@media (max-width: 799px) {
+  #osi-logo {
+    display: inline-block;
+    float: none;
+  }
+  header h1 {
+    width: 100%;
+    height: auto;
+  }
+  header h1 img {
+    width: 100%;
+  }
+}
+@media (max-width: 599px) {
+  #register-button {
+    float: none;
+    margin: 12px auto;
+  }
+  #col1, #col2 {
+    float: none;
+    width: 100%;
+  }
+  #col1 section {
+    border-right: none;
+  }
+}
