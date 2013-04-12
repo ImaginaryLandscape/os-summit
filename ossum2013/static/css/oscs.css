@@ -72,8 +72,8 @@ li {
 #mast {
   font-size: 0;
   padding: 8px;
-  max-width: 750px;
   margin: 0 auto;
+  max-width: 960px;
   overflow: hidden;
   text-align: center;
 }
@@ -81,7 +81,7 @@ li {
   background-position: 0 0;
   float: left;
   height: 146px;
-  margin: 0 24px;
+  margin: 8px 20px 0 0;
   width: 124px;
 }
 header #info {
@@ -92,10 +92,10 @@ header #info {
 header h1 {
   float: left;
   margin-top: 16px;
-  max-width: 570px;
-  width: 570px;
+  max-width: 100%;
+  width: 812px;
 }
-header h1 a {
+header h1 a, header h1 img {
   display: block;
   height: 100%;
   width: 100%;
