@@ -184,6 +184,23 @@ CMS_TEMPLATES = (
 LANGUAGES = [
     ('en', 'English'),
 ]
+CMS_LANGUAGES = {
+    1: [
+        {
+            'code': 'en',
+            'name': gettext('English'),
+            'public': True,
+            'hide_untranslated': True,
+            'redirect_on_fallback':False,
+        },
+    ],
+    'default': {
+        'fallbacks': ['en'],
+        'redirect_on_fallback':True,
+        'public': False,
+        'hide_untranslated': False,
+    }
+}
 
 
 # A sample logging configuration. The only tangible logging
