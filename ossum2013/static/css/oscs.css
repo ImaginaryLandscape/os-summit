@@ -87,7 +87,7 @@ li {
 header #info {
   background: #f0eee8;
   overflow: hidden;
-  padding: 12px 16px;
+  padding: 16px 16px 0;
 }
 header h1 {
   float: left;
@@ -107,6 +107,9 @@ header ul {
 }
 header li {
   margin-bottom: .8em;
+}
+header p {
+  margin: 0
 }
 header h2 {
   clear: both;
