@@ -159,6 +159,7 @@ header h2 {
   float: left;
   padding: 20px 0;
   position: relative;
+  max-width: 100%;
 }
 #main.interior {
   padding: 20px 40px;
@@ -247,6 +248,10 @@ footer p {
   }
 }
 @media (max-width: 599px) {
+  img {
+    height: auto;
+    max-width: 100%;
+  }
   #register-button {
     float: none;
     margin: 12px auto;
