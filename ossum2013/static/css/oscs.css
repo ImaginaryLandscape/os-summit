@@ -1,14 +1,3 @@
-@font-face {
-    font-family: 'UndercoverRegular';
-    src: url('UNDERCOV-webfont.eot');
-    src: url('UNDERCOV-webfont.eot?#iefix') format('embedded-opentype'),
-         url('UNDERCOV-webfont.woff') format('woff'),
-         url('UNDERCOV-webfont.ttf') format('truetype'),
-         url('UNDERCOV-webfont.svg#UndercoverRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -203,9 +192,9 @@ header h2 {
   padding-bottom: .2em;
 }
 #main h3 {
-  font-family: 'UndercoverRegular', arial, sans-serif;
+  font-family: arial, sans-serif;
   font-size: 1.6em;
-  font-weight: normal;
+  font-weight: bold;
   letter-spacing: -.5px;
   margin-bottom: 20px;
   text-align: center;
