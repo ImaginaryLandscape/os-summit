@@ -7,10 +7,11 @@ PROJECT_PATH = os.path.abspath(os.path.dirname(__file__))
 DEPLOYMENT_PATH = os.path.join(PROJECT_PATH, '..', '..','..')
 HTDOCS_PATH = os.path.join(DEPLOYMENT_PATH, 'htdocs')
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
+    ('Errors', 'errors+ossummit@imagescape.com'),
     # ('Your Name', 'your_email@example.com'),
 )
 
@@ -30,7 +31,13 @@ DATABASES = {
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost', 
+    '127.0.0.1',
+    'opensourcecommunitysummit.org',
+    'www.opensourcecommunitysummit.org',
+    'os-summit2013.imagescape.com',
+]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
@@ -146,6 +153,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.sites',
     'django.contrib.messages',
+    'django.contrib.sitemaps',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
     'django.contrib.admin',
