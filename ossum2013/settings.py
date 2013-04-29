@@ -161,6 +161,7 @@ INSTALLED_APPS = (
     'reversion',
     'filer',
     'easy_thumbnails',
+    'robots',
     'cms.plugins.text',
     'cms.plugins.link',
     'cmsplugin_filer_file',
